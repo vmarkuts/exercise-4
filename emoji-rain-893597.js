@@ -1,0 +1,1 @@
+setInterval(()=>{const e=document.createElement('div');e.textContent='🌧️';e.style.position='absolute';e.style.left=Math.random()*100+'vw';e.style.top='0';document.body.appendChild(e);let y=0;const f=setInterval(()=>{y+=5;e.style.top=y+'px';if(y>window.innerHeight){clearInterval(f);e.remove();}},50);},300);
